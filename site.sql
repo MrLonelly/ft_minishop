@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS ft_shop;
+CREATE DATABASE ft_shop;
+
+CREATE TABLE ft_shop.products {
+	`id` INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	`name` VARCHAR(12) NOT NULL,
+};

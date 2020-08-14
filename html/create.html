@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="../css/bootstrap-grid.css">
+</head>
+<body>
+	<div id="header">
+		<div class="wrapper">
+			<div class="left">
+				<div class="header-btn">
+					<a href="../index.php">Home</a>
+				</div>		
+			</div>
+			<div class="right">
+				<ul class="nav-bar">
+					<li class="header-btn">
+						<a href="../php/account.php"><span><img class="icon" src="../img/account.png" alt=""></span>Acount</a>
+					</li>
+					<li class="header-btn">
+						<a href="../php/basket.php"><span><img class="icon" src="../img/basket-cart.png" alt=""></span>Basket</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<form action="../php/create.php" method="post" class="login-form" style="width: 30%;margin: 30px auto;padding: 20px;">
+		Login:<br /><br />
+		<input style="margin-bottom: 20px;" type="text" name="username" placeholder="Username"><br />
+		<input style="margin-bottom: 20px;" type="text" name="email" placeholder="Email"><br />
+		<input style="margin-bottom: 20px;" type="password" name="password" placeholder="Password"><br />
+
+
+		<input style="margin-bottom: 20px;" type="submit" value="Create">
+		<a style="margin: 0 0 0 20px;color: black;" href="./login.html">Login</a>
+	</form>
+
+</body>
+</html>

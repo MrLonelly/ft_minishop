@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+}
+
+a {
+	text-decoration: none;
+	color: #d1d3d6;
+}
+
+
+/*Navigation Bar*/
+
+#header {
+	color: #d1d3d6;
+	font-size: 1em;
+	width: 100%;
+	background-color: #2b2e35;
+}
+
+.wrapper {
+	width: 80%;
+	margin:0 auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.icon {
+	width: 12px;
+	height: 12px;
+	margin: 0px 5px;
+}
+
+.header-btn {
+	padding: 20px;
+	cursor: pointer;
+}
+
+.header-btn:hover {
+	background-color: #ff6752;
+}
+
+.nav-bar {
+	list-style: none;
+}
+
+.nav-bar li {
+	float: left;
+}
+
+/*Info Section*/
+
+#info {
+	background-color: #26262b;
+}
+
+.info-image {
+	height: 380px;
+	background-image: radial-gradient(circle, rgba(255,255,255,0) 28%, rgba(38,38,43,1) 84%), url("../img/store-info-bg.jpeg");
+	background-size: cover;
+	text-align: center;
+	color: #FEFFFE;
+	font-size: 2em;
+	padding-top: 200px;
+}
+
+.info-image h1, .info-image p {
+	text-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
+}
+
+
+/*MENU-Summary-info*/
+
+#menu {
+	background: #f66149;
+}
+
+.sumary-info {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.info-card {
+	width: 25%;
+	color: #FEFFFE;
+	text-align: center;
+	padding: 20px;
+	display: inline-block;
+}
+
+/*TOP-SECTION*/
+
+#top {
+	color: #26262b;
+	width: 100%;
+	background-color: #dbdbdb;
+	text-align: center;
+	padding: 30px 0;
+}
+
+#top h1 {
+	margin-bottom: 20px;
+}
+.card {
+	width: 100%;
+	height: 400px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.card-image {
+	background-image: url("../img/test-prod.jpeg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 60%;
+	margin-bottom: 10px;
+}
+
+.card-title {
+	font-size: 2em;
+}
+
+.detail-button {
+	margin-top: 20px;
+	height: 40px;
+	background: #f66149;
+	border: 1px solid #FF7C1F;
+}
+
+.detail-button:hover {
+	background-color: #FF7C1F;
+	cursor: pointer;
+}
+
+/*CATEGORY*/
+
+#categories {
+	text-align: center;
+	padding: 20px 0;
+	background-color: white;
+}
+
+#categories h1 {
+	margin: 30px 0;
+}
+
+.category {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	margin: 10px 0 40px;
+}
+
+.categ-ms {
+	background: radial-gradient(circle, rgba(255,255,255,0) 14%, rgba(38,38,43,1) 59%), url("../img/categ-ms.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.categ-lx {
+	background: radial-gradient(circle, rgba(255,255,255,0) 14%, rgba(38,38,43,1) 59%), url("../img/categ-lx.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.categ-os {
+	background: radial-gradient(circle, rgba(255,255,255,0) 14%, rgba(38,38,43,1) 59%), url("../img/categ-ms.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.categ-title {
+	color: #d1d3d6;
+	position: absolute;
+	font-size: 1.5em;
+	font-weight: bold;
+	bottom: 20px;
+	left: 30px;
+}
+
+/*TRENDS - LAST ADED*/
+
+#trends {
+	text-align: center;
+	padding: 20px 0;
+	background-color: white;
+	color: #26262b;
+	width: 100%;
+	background-color: #dbdbdb;
+}
+
+#trends h1 {
+	margin: 30px 0;
+}
+
+/* Salles */
+
+#sales {
+	text-align: center;
+	padding: 20px 0;
+	background-color: white;
+	color: #26262b;
+	width: 100%;
+	background-color: white;
+}
+
+#sales h1 {
+	margin: 30px 0;
+}
+
+/* FOOTER */
+footer {
+	height: 140px;
+	background: #242424;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+}

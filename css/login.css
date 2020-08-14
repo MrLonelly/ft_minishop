@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	header: 0;
+}
+
+
+a {
+	text-decoration: none;
+	color: #d1d3d6;
+}
+
+/*Navigation Bar*/
+
+#header {
+	color: #d1d3d6;
+	font-size: 1em;
+	width: 100%;
+	background-color: #2b2e35;
+	display: inline-block;
+}
+
+.wrapper {
+	width: 80%;
+	margin:0 auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.icon {
+	width: 12px;
+	height: 12px;
+	margin: 0px 5px;
+}
+
+.header-btn {
+	padding: 20px;
+	cursor: pointer;
+}
+
+.header-btn:hover {
+	background-color: #ff6752;
+}
+
+.nav-bar {
+	list-style: none;
+}
+
+.nav-bar li {
+	float: left;
+}
+
+/*Login card*/
+
