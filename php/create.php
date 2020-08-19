@@ -34,9 +34,9 @@
 					}
 				}
 
-				mysqli_query($conn, "INSERT INTO ft_minishop.users (ft_minishop.users.name, ft_minishop.users.email, ft_minishop.users.password, 'other') VALUES ('".$_POST['name']."')")
+				mysqli_query($conn, "INSERT INTO ft_minishop.users (name, email, password, type) VALUES ('".$_POST['username']."','".$_POST['email']."','".hash('whirlpool', $_POST['password'])."', 'user')");
 
-
+				header("Location: ../html/login.html");
 			}
 		}
 		else

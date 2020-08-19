@@ -33,7 +33,7 @@
 				<ul class="nav-bar">
 					<li class="header-btn">
 						<a href="account.php"><span><img class="icon" src="../img/account.png" alt=""></span>
-							<?php if($_SESSION['loggued_as_user'])
+							<?php if(isset($_SESSION['loggued_as_user']))
 							{
 								echo $_SESSION['loggued_as_user'];
 							}
@@ -55,7 +55,7 @@
 		<div class="wrapper">
 			<div class="row">
 				<?php
-				if($_SESSION['loggued_as_user'])
+				if(isset($_SESSION['loggued_as_user']))
 				{
 					$data = mysqli_query($conn, "SELECT products.id, products.name, products.description, products.price, products.image
 						FROM ft_minishop.basket
@@ -66,10 +66,13 @@
 				}
 				else
 				{
-					$data = $_SESSION['user_basket'];
+					if(isset($_SESSION['user_basket']))
+						$data = $_SESSION['user_basket'];
+					else
+						$data = "";
 				}
 					
-				if($data)
+				if($data != "")
 				{
 					foreach ($data as $row)
 					{
@@ -83,11 +86,6 @@
 									<p class="product-desc"><?php echo $row['description']?></p>
 									<p class="product-price"><?php echo $row['price']?>$</p>
 								</div>
-
-								<form action="basket.php" method="post" class="delete-prod">
-									<input type="hidden" name="prod-id" value="<?php echo $row['id']?>">
-									<input type="submit" name="delete" value="X">
-								</form>
 							</div>
 						</div>
 						<?php

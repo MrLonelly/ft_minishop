@@ -2,7 +2,7 @@
 
 	session_start();
 
-	if($_POST['username'] && $_POST['password'])
+	if(isset($_POST['username']) && isset($_POST['password']))
 	{
 		if(file_exists("../database.db"))
 		{
@@ -29,6 +29,7 @@
 					if($user['name'] == $_POST['username'] && $user['password'] == hash('whirlpool', $_POST['password']))
 					{
 						$_SESSION['loggued_as_user'] = $_POST['username'];
+						$_SESSION['user_type'] = $user['type'];
 
 						if(isset($_SESSION['user-basket']))
 						{
@@ -67,4 +68,5 @@
 		<?php
 	}
 
+?>
 ?>

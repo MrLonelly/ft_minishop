@@ -1,5 +1,5 @@
 <?php
-	if($_POST['servername'] && $_POST['db-username'] && $_POST['db-password'])
+	if(isset($_POST['servername']) && isset($_POST['db-username']) && isset($_POST['db-password']))
 	{
 		if($_POST['admin'] && $_POST['adminmail'] && $_POST['admpwd'])
 		{
@@ -40,6 +40,8 @@
 					image VARCHAR(255) NOT NULL DEFAULT './img/default-product.jpeg',
 					price INT DEFAULT '0',
 					description VARCHAR(255) NOT NULL,
+					sold INT NOT NULL default '0',
+					category ENUM('microsoft', 'linux', 'macos'),
 					creation_date DATE NOT NULL
 				)");
 
@@ -71,8 +73,8 @@
 				");
 
 				// Push test product
-				mysqli_query($conn, "INSERT INTO ft_minishop.products (name, price, description, creation_date) VALUES
-					('WinowsXP', 40, 'Fastest windows in tha hood', '2020-12-12')
+				mysqli_query($conn, "INSERT INTO ft_minishop.products (name, price, description, creation_date, category) VALUES
+					('WinowsXP', 40, 'Fastest windows in tha hood', '2020-12-12', 'microsoft')
 				");
 
 				// Test basket
